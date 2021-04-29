@@ -19,15 +19,15 @@ import Dropdown from './components/Dropdown';
 
 const options = [
   {
-    label: 'Main Color Red',
+    label: 'The Main Color Red',
     value: 'red',
   },
   {
-    label: 'Second Green',
+    label: 'The Second Color is Green',
     value: 'green',
   },
   {
-    label: 'A Shade of Blue',
+    label:'The Third Color is Blue',
     value: 'blue',
   }
 ];
