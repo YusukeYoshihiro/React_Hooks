@@ -19,7 +19,7 @@ import Dropdown from './components/Dropdown';
 
 const options = [
   {
-    label: 'The Main Color Red',
+    label: 'The Main Color is Red',
     value: 'red',
   },
   {
@@ -35,10 +35,11 @@ const options = [
 
 const App = () => {
   const [selected, setSelected] = useState(options[0]);
-  const [showDropdown, setShowDropdown] = useState(true)
+  const [showDropdown, setShowDropdown] = useState(false);
+  const label = showDropdown ? 'X Close Content' : 'Open Content'
   return (
-    <div className="ui container">
-      <button onClick={() => setShowDropdown(!showDropdown)}>Toggle Button</button>
+    <div className="ui container" style={{marginTop: "10px"}}>
+      <button onClick={() => setShowDropdown(!showDropdown)}>{label}</button>
       {showDropdown ?
         <div>
           <Dropdown
