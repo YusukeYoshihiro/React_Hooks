@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const Dropdown = ({ options, selected, onSelectedChange }) => {
+const TranslateDropdown = ({ label, options, selected, onSelectedChange }) => {
   const [open, setOpen] = useState(false);
   const ref = useRef();
 
   useEffect(() => {
     const onBodyClick = (e) => {
-      console.log(e.target)
       if (ref.current.contains(e.target)) {
         return;
       }
@@ -39,9 +38,9 @@ const Dropdown = ({ options, selected, onSelectedChange }) => {
   });
   // console.log(ref.current);
   return (
-    <div ref={ref} className="ui form">
+    <div ref={ref} className="ui form" style={{marginTop:"30px"}}>
       <div className="field">
-        <label className="label">Select a Color</label>
+        <label className="label">{label}</label>
         <div
           onClick={() => {
             setOpen(!open)
@@ -59,4 +58,4 @@ const Dropdown = ({ options, selected, onSelectedChange }) => {
   )
 }
 
-export default Dropdown
+export default TranslateDropdown
