@@ -33,7 +33,7 @@ import Header from './components/Header';
 const App = () => {
   return(
   <div className="ui container" style={{marginTop:"10px"}}>
-   <Header />
+   <Header /> {/* Navbar */}
    <Route path="/">
      <Accordion />
    </Route>
