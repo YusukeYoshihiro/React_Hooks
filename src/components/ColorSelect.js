@@ -11,7 +11,7 @@ const options = [
     value: 'green',
   },
   {
-    label:'The Third Color is Skyblue',
+    label:'The Third Color is Indigo',
     value: 'blue',
   }
 ];
