@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const items = [
   {
     title: 'What is React?',
-    content: 'React is a front end javascript framework',
+    content: 'React is a front end javascript Framework',
   },
   {
     title: 'Why use React?',
